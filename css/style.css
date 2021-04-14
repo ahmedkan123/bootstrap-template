@@ -1,0 +1,367 @@
+body {
+  direction: rtl;
+}
+/* .section {
+    padding-top: 80px 0;
+} */
+
+/* essential component */
+.special-line {
+  position: relative;
+}
+.special-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 12px;
+  bottom: -18px;
+  width: 105px;
+  height: 4px;
+  background-color: #ffc527;
+  border-radius: 5px;
+}
+/* navbar */
+.navbar {
+  box-shadow: 1px 2px 5px #ebebeb;
+  height: 100px;
+  font-size: 18px;
+}
+.navbar ul li:hover {
+  background-color: rgba(238, 189, 133, 0.459);
+}
+
+.home-item {
+  width: 36%;
+  text-align: right;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.home-item h2 {
+  color: #fff;
+  font-size: 35px;
+  line-height: 50px;
+}
+.home-item p {
+  color: #fff;
+}
+.home-item1 {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+.btn-1 {
+  color: #333;
+  padding: 15px;
+  font-weight: 800;
+}
+@media (max-width: 768) {
+  .home-item {
+    max-width: 100%;
+    text-align: right;
+  }
+  /* .home-item1 {
+  } */
+}
+@media (max-width: 576) {
+  .home-item {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .home-item h2 {
+    font-size: 16px;
+  }
+}
+
+/* style section about */
+
+.section-about {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.about-item {
+  text-align: right;
+  line-height: 35px;
+  margin-left: 15px;
+}
+.about-item h4 {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+.about-item p {
+  margin-bottom: 30px;
+}
+.about-item button {
+  margin-bottom: 20px;
+}
+
+/* start section news */
+
+.news {
+  text-align: right;
+  margin-bottom: 80px;
+}
+.news h4 {
+  margin-bottom: 40px;
+}
+.news .news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.news .news-item img {
+  max-width: 100px;
+  margin-left: 20px;
+}
+
+/* section who */
+.who {
+  text-align: right;
+}
+.who h3 {
+  margin-bottom: 50px;
+}
+.who .choose-item {
+  display: flex;
+  align-items: center;
+}
+.who .choose-item img {
+  margin-left: 40px;
+}
+.who .choose-item-desc h5 {
+  font-size: 20px;
+}
+.who .choose-item-desc p {
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+.who .content-item {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .who .choose-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .who .choose-item img {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+.who .item2 {
+  margin: 50px 0;
+}
+.who .span-icon {
+  background-color: #ffc527;
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+  border-radius: 100%;
+  padding: 15px 25px;
+  margin-left: 20px;
+}
+.who .span-icon i {
+  color: #fff;
+
+}
+.who .row-item-desc h4 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.who .row-item-desc p {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/* section from-item */
+
+.from-item {
+  margin: 80px 0;
+  background-image: url(../images/who-we-are-bg.jpg);
+  background-size: cover;
+  height: 600px;
+  background-color: #ddd;
+  background-position: center center;
+  padding: 80px 0;
+}
+.from-item h2 {
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 0 0 7px #333;
+  text-transform: uppercase;
+}
+.play-btn {
+  background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+  border-radius: 100%;
+  display: inline-block;
+  color: #ffc527;
+  font-size: 70px;
+  height: 140px;
+  line-height: 140px;
+  margin: 120px auto 0;
+  text-align: center;
+  width: 140px;
+}
+/* section certificate */
+.certificate {
+  text-align: right;
+  margin-bottom: 80px;
+}
+.certificate h3 {
+  margin-bottom: 60px;
+}
+.certificate .cert-content {
+  display: flex;
+  align-items: center;
+}
+.certificate .cert-content img {
+  margin-top: -172px;
+  margin-left: 20px;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+}
+.certificate .cert-content-desc p {
+  line-height: 1.8;
+  font-size: 15px;
+  font-style: italic;
+}
+.certificate .cert-content-desc span {
+  font-size: 12px;
+}
+/* section subscribe */
+
+.subscribe {
+  height: 450px;
+  background-image: url(../images/subscribe-our-newsletter-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+.subscribe .subscribe-content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+.subscribe .subscribe-content h2 {
+  font-size: 40px; 
+}
+.subscribe .subscribe-content p {
+  font-size: 20px;
+  margin: auto;
+}
+
+.subscribe .subscribe-content .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.subscribe .subscribe-content .form input {
+  width: 40%;
+  padding: 6px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.subscribe .subscribe-content .form button {
+  width: 15%;
+}
+@media (max-width:576px) {
+  .subscribe .subscribe-content .form button {
+    width: 30%;
+  }
+}
+
+/* section last-news */
+.last-news {
+  text-align: right;
+  margin-bottom: 80px;
+}
+.last-news h2 {
+  margin-bottom: 50px;
+}
+.last-news .card1 {
+  line-height: 30px;
+}
+.last-news h5 {
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.last-news p {
+  font-size: 13px;
+}
+
+/* footer */
+
+footer {
+  text-align: right;
+  background-color: #071C33;
+}
+footer p, h6 {
+  color: rgb(211, 211, 211);
+}
+footer .p1, span {
+  font-size: 13px;
+}
+footer .title1 {
+  font-size: 15px;
+}
+
+footer span {
+  color: rgb(145, 142, 142);
+}
+footer .color, i {
+  color: #ffc527;
+}
+footer .link-page ul {
+  margin-right: -40px;
+}
+footer .link-page ul li a {
+  font-size: 12px;
+}
+
+footer .footer-item .news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+footer .footer-item .news-item img {
+  max-width: 50px;
+  margin-left: 20px;
+}
+footer .item3 {
+  font-size: 12px;
+  line-height: 25px;
+}
+footer .footer-last ul {
+  margin-right: -40px;
+}
+footer .footer-last ul li a i {
+  color: #ddd;
+}
+footer .copy {
+  background-color: #04101E;
+}
+footer .copy .class-copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 5px 0;
+}
+
